@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidenav {
+    background-color: #b39ddb;
+    /* Purple color */
+    color: #fff;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    width: 250px;
+}
+
+.sidenav .logo {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidenav ul li {
+    margin: 20px 0;
+}
+
+.sidenav ul li a {
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.sidenav ul li a:hover {
+    background-color: #301934;
+    /* Darker purple */
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+    width: calc(100% - 200px);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+
+.card p {
+    color: #555;
+    margin: 0 0 10px;
+}
+
+.rating {
+    color: #FFD700;
+    /* Gold color for stars */
+    font-size: 1.5em;
+}

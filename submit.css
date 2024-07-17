@@ -1,0 +1,147 @@
+body {
+    display: block;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    margin-left: 400px;
+    margin-top: -700px;
+}
+
+h1 {
+    color: #4A5568;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-row .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group-row .form-group:last-child {
+    margin-right: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #718096;
+}
+
+input,
+textarea,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #CBD5E0;
+    border-radius: 4px;
+    background-color: #EDF2F7;
+    color: #4A5568;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #63B3ED;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-button {
+    background-color: #63B3ED;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #4299E1;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 24px;
+    color: #CBD5E0;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.stars input[type="radio"]:checked~label,
+.stars label:hover,
+.stars label:hover~label {
+    color: #FFD700;
+}
+
+.sidenav {
+    width: 250px;
+    background-color: rgba(141, 141, 207, 0.9);
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    height: 100vh;
+}
+
+.sidenav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.sidenav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidenav ul li {
+    margin-bottom: 15px;
+}
+
+.sidenav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.sidenav ul li a i {
+    margin-right: 10px;
+}
+
+.sidenav ul li a:hover {
+    background-color: rgba(180, 180, 210, 0.7);
+    border-radius: 4px;
+    height: 30px;
+}
